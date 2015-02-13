@@ -5,9 +5,9 @@
   
   = stylesheet_link_tag 'comfortable_mexican_sofa/application'
   = stylesheet_link_tag 'comfortable_mexican_sofa/admin/application'
-  = javascript_include_tag 'comfortable_mexican_sofa/application'
-  = javascript_include_tag 'comfortable_mexican_sofa/admin/application'
   
+  %script= "var params = #{params.to_json};".html_safe
+
   = yield :head
   
   = render 'comfy/admin/cms/partials/html_head'
